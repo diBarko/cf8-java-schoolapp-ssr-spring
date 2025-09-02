@@ -1,6 +1,5 @@
 package gr.aueb.cf.schoolapp.dto;
 
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
@@ -15,24 +14,23 @@ import lombok.Setter;
 @Setter
 public class TeacherInsertDTO {
 
-    // Bean validation by JpaHibernate
-    // notnull and notblank messages are defined under :: resources\messages.properties
-    @NotNull(message = "{teacher.firstname.notnull}")
-    @NotBlank(message = "{teacher.firstname.notblank}")
-    @Size(min = 2, message = "Το όνομα πρέπει να περιέχει τουλάχιστον δύο χαρακτήρες.")
+//    @NotNull(message = "Το όνομα δεν μπορεί να είναι null.")
+//    @Size(min = 2, message = "Το όνομα πρέπει να περιέχει τουλάχιστον δύο χαρακτήρες.")
+    @NotNull
+    @Size(min = 2)
     private String firstname;
 
-    @NotNull(message = "{teacher.lastname.notnull}")
-    @NotBlank(message = "{teacher.lastname.notblank}")
-    @Size(min = 2, message = "Το επώνυμο πρέπει να περιέχει τουλάχιστον δύο χαρακτήρες.")
+//    @NotNull(message = "Το επώνυμο δεν μπορεί να είναι null.")
+//    @Size(min = 2, message = "Το επώνυμο πρέπει να περιέχει τουλάχιστον δύο χαρακτήρες.")
+    @NotNull
+    @Size(min = 2)
     private String lastname;
 
-    @NotNull(message = "{teacher.vat.notnull}")
-    @NotBlank(message = "{teacher.vat.notblank}")
-    @Pattern(regexp = "\\d{9,}", message = "Το ΑΦΜ δεν μπορεί να είναι μικρότερο από εννιά ψηφία.")
+//    @Pattern(regexp = "\\d{9,}", message = "Το ΑΦΜ δεν μπορεί να είναι μικρότερο από εννιά ψηφία.")
+    @Pattern(regexp = "\\d{9,}")
     private String vat;
 
-    @NotNull(message = "{teacher.region.notnull}")
-    @NotBlank(message = "{teacher.region.notblank}")
+//    @NotNull(message = "Η περιοχή του καθηγητή δεν μπορεί να είναι κενή.")
+    @NotNull
     private Long regionId;
 }

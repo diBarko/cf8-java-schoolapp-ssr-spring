@@ -27,7 +27,6 @@ public class Teacher extends AbstractEntity {
     @Column(unique = true)
     private String vat;
 
-
     private String firstname;
     private String lastname;
 
@@ -35,8 +34,7 @@ public class Teacher extends AbstractEntity {
     @JoinColumn(name = "region_id")
     private Region region;
 
-
-    @PrePersist     // at every db insert this will be called
+    @PrePersist
     public void initializeUUID() {
         if (uuid == null) uuid = UUID.randomUUID().toString();
     }

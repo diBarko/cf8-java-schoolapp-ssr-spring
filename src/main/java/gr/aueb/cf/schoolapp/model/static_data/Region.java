@@ -1,9 +1,7 @@
 package gr.aueb.cf.schoolapp.model.static_data;
 
-import gr.aueb.cf.schoolapp.model.AbstractEntity;
 import gr.aueb.cf.schoolapp.model.Teacher;
 import jakarta.persistence.*;
-import jakarta.persistence.metamodel.StaticMetamodel;
 import lombok.*;
 
 import java.util.Collections;
@@ -16,7 +14,8 @@ import java.util.Set;
 @Getter
 @Setter
 @Table(name = "regions")
-public class Region extends AbstractEntity {
+public class Region {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,7 +23,7 @@ public class Region extends AbstractEntity {
     private String name;
 
     @Getter(AccessLevel.PRIVATE)
-    @OneToMany(mappedBy = "region")
+    @OneToMany(mappedBy = "region", fetch = FetchType.LAZY)
     private Set<Teacher> teachers = new HashSet<>();
 
     public Set<Teacher> getAllTeachers() {
@@ -39,7 +38,7 @@ public class Region extends AbstractEntity {
 
     public void removeTeacher(Teacher teacher) {
         if (teachers == null) return;
-        teachers.remove(teacher);
+        this.teachers.remove(teacher);
         teacher.setRegion(null);
     }
 }
