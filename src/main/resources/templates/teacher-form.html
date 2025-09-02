@@ -54,7 +54,7 @@
                     <select name="" id="region" th:field="*{regionId}">
                         <option value="" selected>Select Region</option>
                         <option th:each="region : ${regions}" th:value="${region.id}" th:text="${region.name}"></option>
-                    </select>./gradlew bootRun
+                    </select>
                     <div th:if="${#fields.hasErrors('regionId')}">
                         <p th:classappend="${#fields.hasErrors('regionId')} ? 'error'" th:errors="*{regionId}"></p>
                     </div>
