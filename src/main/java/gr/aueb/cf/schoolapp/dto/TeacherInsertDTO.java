@@ -16,7 +16,7 @@ import lombok.Setter;
 public class TeacherInsertDTO {
 
     // Bean validation by JpaHibernate
-    //  notnull and blank messages are defined under :: resources\messages.properties
+    // notnull and notblank messages are defined under :: resources\messages.properties
     @NotNull(message = "{teacher.firstname.notnull}")
     @NotBlank(message = "{teacher.firstname.notblank}")
     @Size(min = 2, message = "Το όνομα πρέπει να περιέχει τουλάχιστον δύο χαρακτήρες.")
