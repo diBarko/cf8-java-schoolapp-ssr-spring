@@ -14,9 +14,6 @@ import gr.aueb.cf.schoolapp.repository.TeacherRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -29,19 +26,9 @@ import java.util.Objects;
 @Slf4j
 public class TeacherService implements ITeacherService {
 
-//    private final Logger log = LoggerFactory.getLogger(TeacherService.class);
-
     private final TeacherRepository teacherRepository;
     private final RegionRepository regionRepository;
     private final Mapper mapper;
-
-
-//    @Autowired
-//    public TeacherService(TeacherRepository teacherRepository, RegionRepository regionRepository, Mapper mapper) {
-//        this.teacherRepository = teacherRepository;
-//        this.regionRepository = regionRepository;
-//        this.mapper = mapper;
-//    }
 
     @Override
     @Transactional(rollbackOn = { EntityInvalidArgumentException.class, EntityAlreadyExistsException.class })
@@ -124,15 +111,12 @@ public class TeacherService implements ITeacherService {
             Teacher teacher = teacherRepository.findByUuid(uuid)
                     .orElseThrow(() -> new EntityNotFoundException("Teacher", "Teacher with uuid: " + uuid + " not found"));
 
-            // Αν υπάρχει, κάνε delete με το uuid
             // Εναλλακτικά για soft delete χρειαζόμαστε πεδίο deleted (Boolean) και deletedAt (LocalDateTime)
-            // Για soft delete κάνουμε setDeleted(true) και save
             teacherRepository.deleteById(teacher.getId());
 
             log.info("Teacher with uuid={} deleted.", uuid);
         } catch (EntityNotFoundException e) {
             log.error("Delete failed for teacher with uuid={}. Teacher not found.", uuid, e);
-
             // Rethrow, automatic rollback due to @Transactional
             throw e;
         }
