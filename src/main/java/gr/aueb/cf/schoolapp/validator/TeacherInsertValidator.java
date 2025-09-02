@@ -31,7 +31,7 @@ public class TeacherInsertValidator implements Validator {
         TeacherInsertDTO dto = (TeacherInsertDTO) target;
 
 
-       /* if (dto.getVat() != null && teacherRepository.findByVat(dto.getVat()).isPresent()) {
+        if (dto.getVat() != null && teacherRepository.findByVat(dto.getVat()).isPresent()) {
             log.error("Save failed for teacher with vat={}. Teacher already exists.", dto.getVat());
             errors.rejectValue("vat", "Το Α.Φ.Μ. του καθηγητή υπάρχει ήδη.");
         }
@@ -39,11 +39,11 @@ public class TeacherInsertValidator implements Validator {
         if (dto.getRegionId() == null || regionRepository.findById(dto.getRegionId()).isEmpty()) {
             log.error("Save failed for teacher with vat={}. Region id={} invalid.", dto.getVat(), dto.getRegionId());
             errors.rejectValue("regionId", "Η περιοχή του καθηγητή δεν μπορεί να είναι κενή.");
-        }*/
+        }
 
 
 
-                    // DeepSeek generated
+/*                    // DeepSeek generated
         // Check if regionId is null first
         if (dto.getRegionId() == null) {
             errors.rejectValue("regionId", "regionId.null", "Η περιοχή του Καθηγητή δεν μπορεί να είναι κενή.");
@@ -59,6 +59,6 @@ public class TeacherInsertValidator implements Validator {
         } catch (Exception e) {
             logger.error("Database error when validating region id {}: {}", dto.getRegionId(), e.getMessage());
             errors.rejectValue("regionId", "regionId.databaseError", "Σφάλμα κατά τον έλεγχο της περιοχής.");
-        }
+        }*/
     }
 }
