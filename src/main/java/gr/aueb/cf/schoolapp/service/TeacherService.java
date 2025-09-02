@@ -42,6 +42,7 @@ public class TeacherService implements ITeacherService {
             if (teacherRepository.findByVat(dTO.getVat()).isPresent()) {
                 throw new EntityAlreadyExistsException("Teacher", "Teacher with vat [" + dTO.getVat() + "] already exists.");
             }
+
             Region region = regionRepository.findById(dTO.getRegionId())
                     .orElseThrow(() -> new EntityInvalidArgumentException("Region", "Invalid region id."));
 
@@ -56,7 +57,6 @@ public class TeacherService implements ITeacherService {
         } catch (EntityInvalidArgumentException e) {
             log.error("Save failed for teacher with vat={}. Region id={} invalid", dTO.getVat(), dTO.getRegionId(), e);
             throw e;
-
         }
     }
 
