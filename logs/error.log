@@ -1,0 +1,24 @@
+2025-09-02 05:21:09 ERROR g.a.c.s.v.TeacherInsertValidator - Save failed for teacher with vat=123456789. Teacher already exists.
+ 2025-09-02 05:21:09 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "teacher-form": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-form" - line 48, col 83)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-form" - line 48, col 83)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'Το Α.Φ.Μ. του καθηγητή υπάρχει ήδη..teacherInsertDTO.vat' for locale 'en_US'.
+	at org.springframework.context.support.DelegatingMessageSource.getMessage(DelegatingMessageSource.java:100)
+2025-09-02 05:26:15 ERROR g.a.c.s.v.TeacherInsertValidator - Save failed for teacher with vat=. Region id=null invalid.
+ 2025-09-02 05:26:15 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "teacher-form": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-form" - line 59, col 88)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-form" - line 59, col 88)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'Η περιοχή του καθηγητή δεν μπορεί να είναι κενή..teacherInsertDTO.regionId' for locale 'en_US'.
+	at org.springframework.context.support.DelegatingMessageSource.getMessage(DelegatingMessageSource.java:100)
+2025-09-02 13:42:57 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "teacher-edit-form": Error resolving template [fragments/header2], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "teacher-edit-form" - line 17, col 6)
+ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [fragments/header2], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "teacher-edit-form" - line 17, col 6)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+2025-09-02 13:46:43 ERROR g.a.c.s.service.TeacherService - Update failed for teacher with vat=987654321. Entity already exists found
+ gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException: Teacher with vat 987654321 already exists.
+	at gr.aueb.cf.schoolapp.service.TeacherService.updateTeacher(TeacherService.java:83)
+2025-09-02 13:46:44 ERROR g.a.c.s.service.TeacherService - Update failed for teacher with vat=987654321. Entity already exists found
+ gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException: Teacher with vat 987654321 already exists.
+	at gr.aueb.cf.schoolapp.service.TeacherService.updateTeacher(TeacherService.java:83)
+2025-09-02 13:47:02 ERROR g.a.c.s.service.TeacherService - Update failed for teacher with vat=987654321. Entity already exists found
+ gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException: Teacher with vat 987654321 already exists.
+	at gr.aueb.cf.schoolapp.service.TeacherService.updateTeacher(TeacherService.java:83)
