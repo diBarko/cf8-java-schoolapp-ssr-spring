@@ -16,7 +16,6 @@ import gr.aueb.cf.schoolapp.validator.TeacherInsertValidator;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
@@ -38,18 +37,6 @@ public class TeacherController {
     private final TeacherInsertValidator teacherInsertValidator;
     private final TeacherEditValidator teacherEditValidator;
 
-
-//    @Autowired
-//    public TeacherController(ITeacherService teacherService, RegionRepository regionRepository, TeacherRepository teacherRepository,
-//                             Mapper mapper, TeacherInsertValidator teacherInsertValidator, TeacherEditValidator teacherEditValidator) {
-//        this.teacherService = teacherService;
-//        this.regionRepository = regionRepository;
-//        this.teacherRepository = teacherRepository;
-//        this.mapper = mapper;
-//        this.teacherInsertValidator = teacherInsertValidator;
-//        this.teacherEditValidator = teacherEditValidator;
-//    }
-
     @GetMapping("/insert")
     public String getTeacherForm(Model model) {
         model.addAttribute("teacherInsertDTO", new TeacherInsertDTO());     // model request scope
@@ -61,7 +48,6 @@ public class TeacherController {
     public String saveTeacher(@Valid @ModelAttribute("teacherInsertDTO") TeacherInsertDTO teacherInsertDTO,
                               BindingResult bindingResult, Model model, RedirectAttributes redirectAttributes) {
         Teacher savedTeacher;
-
         teacherInsertValidator.validate(teacherInsertDTO, bindingResult);
 
         if (bindingResult.hasErrors()) {
@@ -71,9 +57,7 @@ public class TeacherController {
 
         try {
             savedTeacher = teacherService.saveTeacher(teacherInsertDTO);
-            // If we wanted to respond with a success page with teacher details,
-            // then we would need the following in comments. Otherwise, if no success page
-            // we can just redirect to teachers view
+            // If we wanted to respond with a success page  we would need the following:
 //            TeacherReadOnlyDTO readOnlyDTO = mapper.mapToTeacherReadOnlyDTO(savedTeacher);
 //            redirectAttributes.addFlashAttribute("teacher", readOnlyDTO);
             return "redirect:/school/teachers";
@@ -84,7 +68,6 @@ public class TeacherController {
         }
     }
 
-//    @GetMapping("/view")
     @GetMapping
     public String getPaginatedTeachers(
             @RequestParam(defaultValue = "0") int page,
@@ -127,15 +110,6 @@ public class TeacherController {
 
         try {
             teacherService.updateTeacher(teacherEditDTO);
-
-            // If we wanted to respond with a success page with teacher details,
-            // then we would need the following in comments, and also need from the service to
-            // send back the updated teacher. Otherwise, if no success page
-            // we can just redirect to teachers view,
-
-            //TeacherReadOnlyDTO readOnlyDTO = mapper.mapToTeacherReadOnlyDTO(updatedTeacher);
-            //redirectAttributes.addFlashAttribute("teacher", readOnlyDTO);
-
             return "redirect:/school/teachers";
         } catch (EntityAlreadyExistsException | EntityInvalidArgumentException | EntityNotFoundException e) {
             model.addAttribute("regions", regionRepository.findAll(Sort.by("name")));
