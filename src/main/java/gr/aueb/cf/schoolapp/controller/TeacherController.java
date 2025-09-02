@@ -56,7 +56,7 @@ public class TeacherController {
 
     @GetMapping("/insert")
     public String getTeacherForm(Model model) {
-        model.addAttribute("teacherInsertDTO", new TeacherInsertDTO());
+        model.addAttribute("teacherInsertDTO", new TeacherInsertDTO());     // Model per-request scope, if redirected model no longer exists.
         model.addAttribute("regions", regionRepository.findAll(Sort.by("name")));   // PagingAndSortingRepository
         return ("/teacher-form");
     }
