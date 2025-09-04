@@ -26,13 +26,12 @@ public class Mapper {
                 teacher.getLastname(), teacher.getVat(), teacher.getRegion().getId());
     }
 
-    public User mapToUserEntity(UserInsertDTO userInsertDTO) {
-//        return new User(userInsertDTO.getUsername(), userInsertDTO.getPassword(),
-//                Role.valueOf(userInsertDTO.getRole().toUpperCase()));
+    public User mapToUserEntity(UserInsertDTO dto) {
+//        return new User(dto.getUsername(), dto.getPassword(), Role.valueOf(dto.getRole().toUpperCase()));
         return User.builder()
-                .username(userInsertDTO.getUsername())
-                .password(userInsertDTO.getPassword())
-//                .role(Role.valueOf(userInsertDTO.getRole().toUpperCase()))
+                .username(dto.getUsername())
+                .password(dto.getPassword())
+//                .role(Role.valueOf(dto.getRole().toUpperCase()))
                 .build();
     }
 }
