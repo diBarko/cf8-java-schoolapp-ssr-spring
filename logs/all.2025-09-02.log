@@ -1,0 +1,292 @@
+2025-09-02 05:19:37 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 05:19:37 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 14320 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 05:19:37 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 05:19:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 05:19:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 05:19:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 05:19:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 762 ms
+ 2025-09-02 05:19:38 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 05:19:38 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 05:19:38 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 05:19:38 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2025-09-02 05:19:38 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 05:19:39 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 05:19:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 05:19:39 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 05:19:39 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 05:19:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 05:19:40 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 3.123 seconds (process running for 3.306)
+ 2025-09-02 05:19:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 05:19:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2025-09-02 05:21:09 ERROR g.a.c.s.v.TeacherInsertValidator - Save failed for teacher with vat=123456789. Teacher already exists.
+ 2025-09-02 05:21:09 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "teacher-form": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-form" - line 48, col 83)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-form" - line 48, col 83)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'Το Α.Φ.Μ. του καθηγητή υπάρχει ήδη..teacherInsertDTO.vat' for locale 'en_US'.
+	at org.springframework.context.support.DelegatingMessageSource.getMessage(DelegatingMessageSource.java:100)
+2025-09-02 05:26:02 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 05:26:02 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 35052 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 05:26:02 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 05:26:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 05:26:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 05:26:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 05:26:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 624 ms
+ 2025-09-02 05:26:03 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 05:26:03 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 05:26:03 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 05:26:03 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2025-09-02 05:26:03 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 05:26:04 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 05:26:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 05:26:04 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 05:26:04 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 05:26:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 05:26:04 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 2.556 seconds (process running for 2.716)
+ 2025-09-02 05:26:12 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 05:26:12 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+ 2025-09-02 05:26:15 ERROR g.a.c.s.v.TeacherInsertValidator - Save failed for teacher with vat=. Region id=null invalid.
+ 2025-09-02 05:26:15 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "teacher-form": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-form" - line 59, col 88)
+ org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringErrorsTagProcessor' (template: "teacher-form" - line 59, col 88)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+Caused by: org.springframework.context.NoSuchMessageException: No message found under code 'Η περιοχή του καθηγητή δεν μπορεί να είναι κενή..teacherInsertDTO.regionId' for locale 'en_US'.
+	at org.springframework.context.support.DelegatingMessageSource.getMessage(DelegatingMessageSource.java:100)
+2025-09-02 06:00:21 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 06:00:21 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 76072 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 06:00:21 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 06:00:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 06:00:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 06:00:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 06:00:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 639 ms
+ 2025-09-02 06:00:22 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 06:00:22 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 06:00:22 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 06:00:22 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ 2025-09-02 06:00:22 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 06:00:22 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 06:00:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 06:00:23 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 06:00:23 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 06:00:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 06:00:23 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 2.623 seconds (process running for 2.785)
+ 2025-09-02 06:00:28 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 06:00:28 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+ 2025-09-02 06:03:40 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 06:03:41 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 2244 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 06:03:41 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 06:03:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 06:03:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 06:03:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 06:03:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 673 ms
+ 2025-09-02 06:03:41 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 06:03:41 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 06:03:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 06:03:42 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 06:03:42 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 06:03:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 06:03:42 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 06:03:43 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 06:03:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 06:03:43 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 2.651 seconds (process running for 2.824)
+ 2025-09-02 06:04:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 06:04:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+ 2025-09-02 06:12:46 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 06:12:46 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 32444 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 06:12:46 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 06:12:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 06:12:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 06:12:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 06:12:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 639 ms
+ 2025-09-02 06:12:47 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 06:12:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 06:12:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 06:12:48 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 06:12:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 06:12:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 06:12:48 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 06:12:49 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 06:12:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 06:12:49 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 2.655 seconds (process running for 2.829)
+ 2025-09-02 06:12:54 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 06:12:54 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+ 2025-09-02 06:23:32 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 06:23:32 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 85124 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 06:23:32 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 06:23:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 06:23:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 06:23:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 06:23:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 683 ms
+ 2025-09-02 06:23:33 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 06:23:33 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 06:23:33 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 06:23:33 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 06:23:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 06:23:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 06:23:34 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 06:23:34 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 06:23:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 06:23:34 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 2.717 seconds (process running for 2.904)
+ 2025-09-02 06:27:10 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 06:27:10 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 43460 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 06:27:10 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 06:27:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 06:27:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 06:27:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 06:27:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 655 ms
+ 2025-09-02 06:27:11 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 06:27:11 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 06:27:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 06:27:11 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 06:27:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 06:27:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 06:27:12 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 06:27:12 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 06:27:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 06:27:12 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 2.57 seconds (process running for 2.733)
+ 2025-09-02 06:27:18 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 06:27:18 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+ 2025-09-02 13:13:07 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 13:13:07 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 81608 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 13:13:07 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 13:13:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 13:13:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 13:13:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 13:13:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 884 ms
+ 2025-09-02 13:13:08 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 13:13:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 13:13:09 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 13:13:09 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 13:13:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 13:13:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 13:13:10 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 13:13:10 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 13:13:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 13:13:10 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 3.324 seconds (process running for 3.55)
+ 2025-09-02 13:13:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 13:13:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+ 2025-09-02 13:17:08 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 13:17:08 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 16460 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 13:17:08 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 13:17:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 13:17:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 13:17:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 13:17:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 640 ms
+ 2025-09-02 13:17:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 13:17:09 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 13:17:09 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 13:17:09 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 13:17:10 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 13:17:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 13:17:10 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 13:17:10 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 13:17:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 13:17:10 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 2.573 seconds (process running for 2.733)
+ 2025-09-02 13:17:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 13:17:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+ 2025-09-02 13:42:57 ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "teacher-edit-form": Error resolving template [fragments/header2], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "teacher-edit-form" - line 17, col 6)
+ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [fragments/header2], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "teacher-edit-form" - line 17, col 6)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+2025-09-02 13:44:58 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2025-09-02 13:44:58 INFO  g.a.c.schoolapp.SchoolappApplication - Starting SchoolappApplication using Java 21.0.8 with PID 87048 (D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp\build\classes\java\main started by denis in D:\ONEDRIVE\PERSONAL\OneDrive\Documents\_AUEB_ROOT\CF8\JAVA\ClassProjects\schoolapp)
+ 2025-09-02 13:44:58 INFO  g.a.c.schoolapp.SchoolappApplication - The following 1 profile is active: "dev"
+ 2025-09-02 13:44:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2025-09-02 13:44:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+ 2025-09-02 13:44:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2025-09-02 13:44:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 677 ms
+ 2025-09-02 13:44:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+ 2025-09-02 13:44:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2025-09-02 13:44:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2025-09-02 13:44:59 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2025-09-02 13:45:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2025-09-02 13:45:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2025-09-02 13:45:00 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+ 2025-09-02 13:45:00 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+ 2025-09-02 13:45:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2025-09-02 13:45:00 INFO  g.a.c.schoolapp.SchoolappApplication - Started SchoolappApplication in 2.678 seconds (process running for 2.844)
+ 2025-09-02 13:45:04 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2025-09-02 13:45:04 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+ 2025-09-02 13:45:19 INFO  g.a.c.s.service.TeacherService - Teacher with vat=1212121212 update.
+ 2025-09-02 13:45:28 INFO  g.a.c.s.service.TeacherService - Teacher with vat=987654321 update.
+ 2025-09-02 13:45:32 INFO  g.a.c.s.service.TeacherService - Teacher with vat=9876543210 update.
+ 2025-09-02 13:45:37 INFO  g.a.c.s.service.TeacherService - Teacher with vat=123456789 update.
+ 2025-09-02 13:45:43 INFO  g.a.c.s.service.TeacherService - Teacher with vat=645634520 update.
+ 2025-09-02 13:45:54 INFO  g.a.c.s.service.TeacherService - Teacher with vat=941540564 update.
+ 2025-09-02 13:46:05 INFO  g.a.c.s.service.TeacherService - Teacher with vat=147896325 update.
+ 2025-09-02 13:46:43 ERROR g.a.c.s.service.TeacherService - Update failed for teacher with vat=987654321. Entity already exists found
+ gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException: Teacher with vat 987654321 already exists.
+	at gr.aueb.cf.schoolapp.service.TeacherService.updateTeacher(TeacherService.java:83)
+2025-09-02 13:46:44 ERROR g.a.c.s.service.TeacherService - Update failed for teacher with vat=987654321. Entity already exists found
+ gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException: Teacher with vat 987654321 already exists.
+	at gr.aueb.cf.schoolapp.service.TeacherService.updateTeacher(TeacherService.java:83)
+2025-09-02 13:47:02 ERROR g.a.c.s.service.TeacherService - Update failed for teacher with vat=987654321. Entity already exists found
+ gr.aueb.cf.schoolapp.core.exceptions.EntityAlreadyExistsException: Teacher with vat 987654321 already exists.
+	at gr.aueb.cf.schoolapp.service.TeacherService.updateTeacher(TeacherService.java:83)
