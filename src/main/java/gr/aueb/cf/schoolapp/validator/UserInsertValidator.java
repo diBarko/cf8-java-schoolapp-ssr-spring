@@ -1,9 +1,6 @@
 package gr.aueb.cf.schoolapp.validator;
 
-import gr.aueb.cf.schoolapp.dto.TeacherInsertDTO;
 import gr.aueb.cf.schoolapp.dto.UserInsertDTO;
-import gr.aueb.cf.schoolapp.repository.RegionRepository;
-import gr.aueb.cf.schoolapp.repository.TeacherRepository;
 import gr.aueb.cf.schoolapp.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
