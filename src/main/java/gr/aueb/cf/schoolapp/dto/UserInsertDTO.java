@@ -14,12 +14,12 @@ import lombok.Setter;
 @Setter
 public class UserInsertDTO {
 
-    @NotNull
-    @Size(min = 2, max = 20)
+    @NotNull(message = "{NotNull.userInsertDTO.username}")
+    @Size(min = 2, max = 20, message = "{Size.userInsertDTO.username}")
     private String username;
 
-    @NotNull
-    @Pattern(regexp = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&+=])^.{8,}$")
+    @NotNull(message = "{NotNull.userInsertDTO.username}")
+    @Pattern(regexp = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&+=])^.{8,}$", message = "{Size.userInsertDTO.username}")
     private String password;
 
     @NotNull
