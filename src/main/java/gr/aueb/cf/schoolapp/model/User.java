@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -31,25 +30,19 @@ public class User extends AbstractEntity implements UserDetails {
     //@Column(length = 60)
     private String password;
 
-//    @Enumerated(EnumType.STRING)
+//    @Enumerated(EnumType.STRING)      // v1
 //    private Role role;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "role_id")
     private Role role;
 
-//    public User(String username, String password, Role role) {
-//        this.username = username;
-//        this.password = password;
-//        this.role = role;
-//    }
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        //return List.of(new SimpleGrantedAuthority(role.name()));
+        //return List.of(new SimpleGrantedAuthority(role.name()));      // v1
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
 
-        grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_" + role.getName()));        // prefix with ROLE_
+        grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_" + role.getName()));        // prefix with ROLE_   - Spring requirement
 
         role.getCapabilities().forEach(capability -> grantedAuthorities.add(new SimpleGrantedAuthority(capability.getName())));
         return grantedAuthorities;
