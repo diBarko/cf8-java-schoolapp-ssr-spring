@@ -14,6 +14,9 @@ java {
         vendor = JvmVendorSpec.AMAZON
 	}
 }
+bootJar {
+    archiveFileName = "schoolapp.jar"   // Forces the output JAR name
+}
 
 configurations {
 	compileOnly {
